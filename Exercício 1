@@ -1,0 +1,42 @@
+//1- Faça um programa para dar horas hh, mm, ss, que mostra as horas, minutos e segundos e também nós calcular a hora após 2 segundos.
+Procedimento "horario"
+
+//Criar uma variável, que só aceita números inteiros, para cada medida (horas, minutos, segundos).
+var horas: inteiro;
+var minutos: inteiro;
+var segundo: inteiro;
+
+//Comando para iserir os valores manualmente.
+leia (horas);
+leia (minutos);
+leia (segundo);
+
+//Comando para aparecer os dados iseridos para o usuário.
+escreval ("São ", (horas), "h ", (minutos), "min e ", (segundo), "seg.")
+
+//Enquanto a variável segundo, for menor ou igual a 57, adicionar 2 segundos.
+Enquanto (segundo <= 57) 
+FACA (segundo <- segundo +2)
+escreval ("São ", (horas), "h ", (minutos), "min e ", (segundo), "seg.")
+
+//Se a variável segundo for igual a 58, então segundo retorna ao valor 0 e adiciona 1 a variável minutos.
+Se (segundo = 58)
+Então (segundo <- 0, minutos <- minutos + 1)
+escreval ("São ", (horas), "h ", (minutos), "min e ", (segundo), "seg.")
+FimSe
+
+//Se a variável segundo for igual a 59, então segundo retorna ao valor 1 e adiciona 1 a variável minutos.
+Se (segundo = 59)
+Então (segundo<- 1, minutos <- minutos + 1)
+escreval ("São ", (horas), "h ", (minutos), "min e ", (segundo), "seg.")
+FimSe
+
+//Se a variável minutos for igual a 60, então minutos retorna ao valor 0 e adiciona 1 a variável horas.
+Se (minutos = 60)
+Então (minutos<- 0, horas<- horas +1)
+escreval ("São ", (horas), "h ", (minutos), "min e ", (segundo), "seg.")
+FimSe
+FIMENQUANTO
+
+
+FimProcedimento
