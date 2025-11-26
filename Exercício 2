@@ -1,0 +1,29 @@
+//2- Faça um programa que leia 2 números e deduzir se eles estão ordem crescente ou decrescente.
+
+algoritmo Ordem
+
+//Criar duas variáveis que recebem um número inteiro.
+var valor1: inteiro
+var valor2: inteiro 
+
+//Inserir o valor das duas variáveis.
+leia (valor1)
+leia (valor2)
+
+//Verifica se as variáveis estão em ordem crescente, decrescente ou são de mesmo valor.
+Se (valor1 < valor2)
+Então 
+escreval ("Os valores estão em ordem crescente." )
+FimSe
+
+Se (valor1 > valor2)
+Então 
+escreval ("Os valores estão em ordem decrescente.")
+FimSe
+
+Se (valor1 = valor2)
+Então 
+escreval ("Os valores são iguais.")
+Fimse
+
+Fimalgoritmo
