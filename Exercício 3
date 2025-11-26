@@ -1,0 +1,32 @@
+//3- Calcular o maior número de uma lista de números.
+algoritmo Lista 
+
+//Criar 3 variáveis de números inteiros.
+var num1: inteiro
+var num2: inteiro 
+var num3: inteiro
+
+//Inserir o valor dessas variáveis.
+leia (num1)
+leia (num2)
+leia (num3)
+
+//Verifica se uma variável é maior do que as outras.
+Se (num1 > num2 e num1 > num3)
+Então 
+escreval (num1, " é o maior!")
+FimSe
+
+Se (num2>num1 e num2>num3)
+Então 
+escreval (num2, " é o maior!")
+FimSe
+
+Se(num3>num1 e num3>num2)
+Então 
+escreval (num3, " é o maior!")
+FimSe
+
+Fimalgoritmo 
+___________________________________________
+
