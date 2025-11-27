@@ -1,0 +1,27 @@
+//3- Calcular o maior número de uma lista de números.
+
+algoritmo Lista 
+
+//Criar 3 variáveis, lista, numero e i, que receberão um valor inteiro
+var lista: inteiro
+var num1: inteiro
+var i: inteiro
+
+//Número receberá o valor 0
+num1 <- 0
+
+//Criar uma lista de 1 até 10 números, i receberá números aleatórios de 0 a 10
+Para lista de 1 ate 10
+Faca
+i<- randi(10) 
+escreval (i) 
+
+//Se o valor de número (0), for menor que o valor de i. Então número receberá o maior valor de i, independente da posição na lista!
+Se (num1 < i)
+Entao
+num1<- i
+FimSe
+FimPara
+
+escreval (num1, " é o maior.")
+Fimalgoritmo 
