@@ -1,0 +1,39 @@
+//4- De uma lista de 100 números, determinar simultaneamente, o número máximo e o mínimo.
+
+algoritmo MaxMin
+
+//Criar variáveis lista, maior número, menor número, i e números, todos receberão valores inteiros
+var lista: inteiro 
+var maior_num: inteiro 
+var menor_num: inteiro 
+var i: inteiro
+var numeros: inteiro 
+
+//Maior número recebe o valor 0; Menor número recebe o valor 200.
+maior_num <- 0
+menor_num<- 200
+
+//Criar im lista de 1 a 100 números, a variável i receberá numeros aleatórios de 0 a 200, mas pode ser qualquer valor 
+Para lista de 1 ate 100
+faca
+i<- randi(200)
+escreval(lista, "º: ", i)
+
+//Se a variável i for maior, que o maior número (0), então maior número recebe o maior valor de i.
+Se (i > maior_num)
+Entao
+maior_num <- i
+FimSe
+
+//Se a variável i for menor ou igual ao menor número (200), então o menor número recebe o menor valor de i.
+Se(i <= menor_num)
+Entao
+menor_num<- i
+FimSe
+
+FimPara
+
+escreval ("O maior número é: ", maior_num)
+escreval ("O menor número é: ", menor_num)
+
+Fimalgoritmo 
