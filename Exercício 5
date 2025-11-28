@@ -1,0 +1,59 @@
+// 5 - Criar um algoritmo que leia o peso e a altura de uma pessoa e, em seguida, calcule o IMC e classifique o resultado de acordo com a tabela padrão.
+
+algoritmo "Calculadora_IMC"
+
+//Criar 3 variáveis peso, altura e imc. Todas devem ser números reais.
+var peso : real
+var altura: real
+var imc: real
+
+//O usuário deve inserir o peso e a altura.
+leia(peso)
+leia (altura)
+
+escreval( "Peso: ", peso, "kg.")
+escreval("Altura: ", altura, "m.").
+
+//Cálculo do IMC.
+imc<- peso/(altura * altura)
+
+escreval("Seu IMC é: ", imc)
+
+//Abaixo de 18,5	Abaixo do peso
+//Entre 18,5 e 24,9	Peso normal
+//Entre 25,0 e 29,9	Sobrepeso
+//Entre 30,0 e 34,9	Obesidade Grau I
+//Entre 35,0 e 39,9	Obesidade Grau II
+//Acima de 40,0	Obesidade Grau III (Mórbida)
+
+//Dependendo do valor do IMC, irá exibir uma mensagem diferente.
+Se (imc <= 18.5)
+Entao
+escreval ("Você está Abaixo do Peso.")
+FimSe 
+
+Se (imc > 18.5) e (imc <= 24.9)
+Entao
+escreval ("Seu peso é Normal.")
+FimSe 
+
+Se (imc >= 25) e (imc <= 29.9)
+Entao
+escreval ("Você está com Sobrepeso.")
+FimSe 
+
+Se (imc >= 30) e (imc <= 34.9)
+Entao
+escreval ("Você está com Obesidade Grau 1.")
+FimSe 
+
+Se (imc >= 35) e (imc <= 39.9)
+Entao
+escreval ("Você está com Obesidade Grau 2.")
+FimSe 
+
+Se (imc > 40)
+Entao
+escreval ("Você está com Obesidade Grau 3. Também conhecida como Obesidade Mórbida.")
+FimSe 
+fimalgoritmo
